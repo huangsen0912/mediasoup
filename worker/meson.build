@@ -26,17 +26,17 @@ if host_machine.system() == 'windows'
   ]
 endif
 
-if get_option('ms_log_trace')
+//if get_option('ms_log_trace')
   cpp_args += [
     '-DMS_LOG_TRACE',
   ]
-endif
+//endif
 
-if get_option('ms_log_file_line')
+//if get_option('ms_log_file_line')
   cpp_args += [
     '-DMS_LOG_FILE_LINE',
   ]
-endif
+//endif
 
 common_sources = [
   'src/lib.cpp',
